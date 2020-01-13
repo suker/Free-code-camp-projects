@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technical Documentation</title>
+
+    <!-- javascript link -->
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <!-- NAVBAR SECTION -->
+
+    <nav id="navbar">
+        <header id="nav-header"><div>
+            <img src="https://i.pinimg.com/originals/4c/b7/5b/4cb75bba270525ab419c4ad4d27e6ebe.png" alt="Logo Not Found" width="100px" height="100px">
+        </div>Python 3 Documentation</header><br>
+        <div class="navigation">
+            <div class="nl"><a class="nav-link" href="#Introduction">Introduction</a></div>
+            <div class="nl"><a class="nav-link" href="#Hello_World">Hello World</a></div>
+            <div class="nl"><a class="nav-link" href="#Variables">Variables</a></div>
+            <div class="nl"><a class="nav-link" href="#Data_Types">Data Types</a></div>
+            <div class="nl"><a class="nav-link" href="#Conditional_Sentences">Conditional Sentences</a></div>
+            <div class="nl" ><a class="nav-link" href="#Repetitive_Sentences">Repetitive Sentences</a></div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>
+                <!--It contains text that describe topic of this section -->
+                <h2>Introduction <hr></h2>
+            </header>
+            <p>Python is a <b>high-level</b>, <b>interpreted</b> scripting <b>language</b> developed in the late 1980s by <a href="https://en.wikipedia.org/wiki/Guido_van_Rossum"><b>Guido van Rossum</b></a> at the National Research Institute for Mathematics and Computer Science in the Netherlands. The initial version was published at the alt.sources newsgroup in 1991, and version 1.0 was released in 1994.</p>
+            <h3>Python Features:</h3>
+            <ul>
+                <li><b>Interpreted Language: </b>
+                    Many languages are compiled, meaning the source code you create needs to be translated into machine code, the language of your computer’s processor, before it can be run. Programs written in an interpreted language are passed straight to an interpreter that runs them directly.</li><br>
+                <li><b>Portable: </b>Because Python code is interpreted and not compiled into native machine instructions, code written for one platform will work on any other platform that has the Python interpreter installed.</li><br>
+                <li><b>Simple: </b>As programming languages go, Python is relatively uncluttered, and the developers have deliberately kept it that way.
+                    A rough estimate of the complexity of a language can be gleaned from the number of keywords or reserved words in the language. These are words that are reserved for special meaning by the compiler or interpreter because they designate specific built-in functionality of the language.</li><br>
+                <li><b>Popular: </b>Python has been growing in popularity over the last few years. The 2018 Stack Overflow Developer Survey ranked Python as the 7th most popular and the number one most wanted technology of the year. World-class software developers</li><br>
+                <li><b>Free and Open Source: </b>Python language is freely available at offical web address.The source-code is also available. Therefore it is open source.</li><br>
+                <li><b>Object-Oriented: </b>Python supports object oriented language and concepts of classes and objects come into existence.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Hello_World">
+            <header><h2>Hello World</h2><hr></header>
+            <p>At this section, you are going to learn how easy is to write your first <b>"Hello World"</b> code in <b>Python 3.0 or above</b>. As an interpreted language, you only need to write the name of the function which is going to print our sentence in the screen.</p>
+            <div class="code">
+                <code>
+                    print("Hello World!")
+                </code>
+            </div>
+        </section>
+
+
+        <section class="main-section" id="Variables">
+            <header><h2>Variables</h2><hr></header>
+            <h3>What is a Variable in Python?</h3>
+            <p><b>A Python variable is a reserved memory location to store values.</b> In other words, a variable in a python program gives data to the computer for processing. <br>
+                Every value in Python has a <b>Data Type</b>. Different data types in Python are <b>Numbers, List, Tuple, Strings, Dictionary,</b> etc. Variables can be declared by any name or even alphabets like a, aa, abc, etc.</p>
+            <h3>How to Declare and use a Variables</h3>
+            <p>Lets see an example, we will declare a variable called "foo" and print it.</p>
+            <div class="code"><code>
+                foo = 42 <br>
+                print(foo)
+            </code></div>
+            <p>As we can see when we declare <code class="code">foo = 42</code> we are assigning to our <b>foo</b> variable a number,
+            so this way our variable's <b>Data Type</b> converts to an <b>Integer.</b></p>
+            <p>We can also declare <b>multiples variables</b> in a single code line and assign it a value for each of them.</p>
+            <div class="code">
+                <code>
+                    a, b, c = "42", 3, [1,2,3] <br>
+                    print(a) <br>
+                    print(b) <br>
+                    print(c)
+                </code>
+            </div><br>
+            <div class="code">
+                <code>
+                    output <br>
+                    "42" <br>
+                    3 <br>
+                    [1,2,3] <br>
+                </code>
+            </div>
+            
+            
+        </section>
+
+
+        <section class="main-section" id="Data_Types">
+            <header><h2>Data Types</h2><hr></header>
+            <p>Python is a <b>non-typed</b> programming language, that means when we declare our variables we don't have to add the <b>type</b> of that <b>variable</b>.</p>
+            <p> At first this could be a bit confused but when we learn how every data type is represented we'll notice how It can be readable and understood. </p>
+            <p>At the moment that we <b>assign a value</b> to our variables, it would represent a <b>data type</b>. <br>
+            Lets see some examples:</p>
+
+            <div class="code">
+                <code>
+                    #Declaring and assigning a Integer value <br>
+                    myInteger = 42 <br><br>
+                    
+                    #We could also reassign a value for that same <b>variable</b> (It can be different <b>data type</b> ) <br>
+                    myInteger = "Laptop" <br><br>
+                    # Now myInteger variable has been reassigning to the value of "Laptop" changing his type to <b>String</b><br><br>
+
+                    # <b>String variables</b><br>
+                    myString = "Hello World" <br><br>
+                    # <b>List variables</b><br>
+                    myList = [1, 2, 3, ['h','e','llo'], "Home"] <br><br>
+                    # <b>Tuple variables</b><br>
+                    myTuple = (4, 3) <br><br>
+                    # <b>Set variables</b><br>
+                    mySet = {1, 2, 3, 4, 42}
+                </code>
+            </div>
+            
+        </section>
+
+
+        <section class="main-section" id="Conditional_Sentences">
+            <header><h2>Conditional Sentences</h2><hr></header>
+            <p>Python supports the usual logical conditions from mathematics:</p>
+            <ul>
+                <li>Equals: <code class="code">a == b</code class="code"></li>
+                <li>Not Equals: <code class="code"> a != b</code></li>
+                <li>Less than:<code class="code"> a < b</code></li>
+                <li>Less than or equal to:<code class="code"> a <= b</code></li>
+                <li>Greater than:<code class="code">a > b</code></li>
+                <li>Greater than or equal to:<code class="code">a >= b</code></li>
+            </ul>
+            <p>These conditions can be used in several ways, most commonly in <b>"if statements"</b> and loops. <br> An "if statement" is written by using the <b>if</b> keyword.</p>
+            <div class="code">
+                <code>
+                    a = 5 <br>
+                    b = 10 <br><br>
+                    #if condition is <b>true</b> then we execute the code inside unless go to <b>else</b> code. <br>
+                    if a > b: <br>
+                        print(f'{a} is greater than {b}') <br>
+                    else: <br>
+                        print(f'{a} is less than {b}') <br>
+                </code>
+            </div> <br>
+            <div class="code">
+                <code>
+                    Output: <br>
+                    <b>5 is less than 10</b>
+                </code>
+            </div>
+        </section>
+
+
+        <section class="main-section" id="Repetitive_Sentences">
+            <header><h2>Repetitive Sentences</h2><hr></header>
+            <p>Python has two primitives loops commands</p>
+            <ul>
+                <li><code class="code">while</code> loops</li>
+                <li><code class="code">for</code> loops</li>
+            </ul>
+            <h3>While loop</h3>
+            <p>With <code class="code">while</code> loop we can execute the code inside as long as <b>condition</b> remains <b>true</b></p>
+            <div class="code"><code>
+                i = 10 <br>
+                while i > 10: <br>
+                    print(i) <br>
+                    i-= 1
+            </code></div><br>
+            <div class="code"><code>
+                # Output: <br>
+                10 <br>
+                9 <br>
+                8 <br>
+                ... <br>
+                5 <br>
+                ... <br>
+                2 <br>
+                1
+            </code></div>
+            <p>The <code class="code">while</code> loop requires relevant variables to be ready, in this example we need to define an <b>i</b>, i, which we set to 1.</p>
+
+            <h3>For loops</h3>
+            <p>A for loop is used for <b>iterating over a sequence</b> (that is either a list, a tuple, a dictionary, a set, or a string). <br>
+                This is less like the <code class="code">for</code> keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages. <br>
+                With the for loop we can execute a <b>set of statements</b>, once for each item in a list, tuple, set etc.</p>
+            
+            <div class="code"><code>
+                colors = ["Yellow", "Blue", "Red", "White"] <br>
+                for c in colors: <br>
+                    print(c)
+            </code></div><br>
+            <div class="code"><code>
+                # Output <br>
+                "Yellow" <br>
+                "Blue" <br>
+                "Red" <br>
+                "White"
+            </code></div>
+            <p>The <code class="code">for</code> loop does not require an <b>indexing variable</b> to set beforehand.</p>
+        </section>
+
+
+    </main>
+</body>
+</html>

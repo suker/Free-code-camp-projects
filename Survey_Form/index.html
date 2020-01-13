@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="css/master.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="survey" class="container jumbotron">
+        <h1 style="font-size: 4em;" id="title">New Tech Courses Incoming</h1>
+        <p style="color:#269941;font-size: 2.5em;" id="description">subscribe to be aware of them!</p>
+
+        <form class="needs-validation" action="/Survey_Form/index.html" method="get" id="survey-form">
+
+            <div class="row">
+
+                <div class="form-group col-md-6">
+                    <label id="name-label">Full Name</label>
+                    <input class="form-control" type="text" id="name" placeholder="Name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label id="email-label">Email address</label>
+                    <input class="form-control" type="email" id="email" placeholder="Email" required>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="form-group col-md-6 col-sm-4 col-3">
+                    <label id="number-label">Age <small style="color:#f3bd34;">(optional)</small></label>
+                    <input class="form-control" type="number" id="number" placeholder="[18-100]" min="18" max="100">
+                </div>
+
+                <div class="form-group col-md-6 col-sm-8 col-9">
+
+                    <label for="dropdown-label">Interested? <span class="text-muted">(0% 25%, 50% 75%
+                            100%)</span></label>
+                    <select class="form-control" id="dropdown">
+                        <option value="1">0%</option>
+                        <option value="2">25%</option>
+                        <option value="3">50%</option>
+                        <option value="4">75%</option>
+                        <option value="5">100%</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <h4>Would you like to recieve additional information?</h4>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="fruits" id="opt-rad1" value="1">
+                    <label class="form-check-label" for="opt-rad1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="fruits" id="opt-rad2" value="2">
+                    <label class="form-check-label" for="opt-rad2">No</label>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <p>What area are you interested to learn? <span style="opacity: 1; color:#f3bd34;">(multiple
+                            choices avalaibles)</span></p>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="" id="check1" value="op1">
+                        <label class="form-check-label" for="check1">Data Analysis</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="" id="check2" value="op2">
+                        <label class="form-check-label" for="check2">Machine Learning</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="" id="check3" value="op3">
+                        <label class="form-check-label" for="check3">Web Programming</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="" id="check4" value="op4">
+                        <label class="form-check-label" for="check4">Robotics</label>
+                    </div>
+
+                </div>
+
+                <div class="form-group col-md-6">
+                    <p>How long would be nice for the courses? <span style="color:#f3bd34;">(aprox)</span></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="" id="check5" value="op5">
+                        <label class="form-check-label" for="check5">4 weeks</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="" id="check6" value="op6">
+                        <label class="form-check-label" for="check6">8 weeks</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="" id="check7" value="op7">
+                        <label class="form-check-label" for="check7">12 weeks</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="" id="check8" value="op8">
+                        <label class="form-check-label" for="check8">16 weeks</label>
+                    </div>
+                </div>
+
+                <div class="form-group container">
+                    <label for="extra-info">Additional Information: </label>
+                    <textarea class="form-control" id="extra-info" cols="auto" rows="5"></textarea>
+                </div>
+
+
+            </div>
+            <div class="submit-btn">
+                <input class="btn  btn-lg btn-block" type="submit" id="submit" value="Submit Here!">
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

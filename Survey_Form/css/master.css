@@ -1,0 +1,22 @@
+
+body{
+    background: rgb(243,189,52);
+    background: linear-gradient(126deg, rgba(243,189,52,1) 0%, rgba(150,181,66,1) 20%, rgba(67,161,99,1) 40%, rgba(0,133,120,1) 60%, rgba(0,102,116,1) 80%, rgba(47,72,88,1) 100%);
+}
+
+#survey{
+    margin-top: 20px;
+    background: #DFE0DF;
+    font-weight: bold;
+}
+
+#title, #description{
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    
+}
+
+.btn{
+    background: #f3bd34;
+}
