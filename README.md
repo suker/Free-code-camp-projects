@@ -8,4 +8,4 @@
 | None | <a href= "./ResponsiveWebDesign/Technical_Doc_Page">Technical Documentation page</a>  |
 | None | <a href= "./ResponsiveWebDesign/Tribute_Page">Tribute page</a>  |
 
-for the `responsive web design` section, you can take a look in my `codepen` repo. ` https://codepen.io/Suk3r/pens/ `
+for the `responsive web design` section, you can take a look in my `codepen` webpage: https://codepen.io/Suk3r/pens/
